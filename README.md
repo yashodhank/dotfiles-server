@@ -9,7 +9,7 @@ Server.
 Run this:
 
 ```sh
-git clone https://github.com/ndtaylor/dotfiles-server.git ~/.dotfiles
+git clone https://github.com/yashodhank/dotfiles-server.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
@@ -17,6 +17,7 @@ script/bootstrap
 If you were previously using bash, run this and then restart your terminal to 
 switch over to zsh.
 
+    apt-get install -y zsh
     chsh -s $(which zsh)
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.

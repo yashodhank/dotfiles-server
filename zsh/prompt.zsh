@@ -50,7 +50,7 @@ directory_name() {
   echo "%{$fg[cyan]%}%0~%{$reset_color%}"
 }
 
-export PROMPT=$'\n'"%{$fg[magenta]%}┌─%{$reset_color%} [%{$fg[green]%} %D{%Y-%m-%d} %* %{$reset_color%}]:"$' $(directory_name) $(git_dirty)$(need_push)\n'"%{$fg[magenta]%}└─ %n@%m ➜ %{$reset_color%} "
+export PROMPT=$'\n'"%{$fg[magenta]%}┌─%{$reset_color%} [%{$fg[green]%} %D{%d-%m-%Y} %* %{$reset_color%}]:"$' $(directory_name) $(git_dirty)$(need_push)\n'"%{$fg[magenta]%}└─ %n@%M ➜ %{$reset_color%} "
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
